@@ -1,5 +1,5 @@
 ---
-title: MySql where与where in
+title: MySql 逐条查询与in
 date: 2019-03-14 10:58:06
 tags: MySql
 categories: 技术
@@ -11,7 +11,7 @@ categories: 技术
 1. 遍历ID列表，逐一去B表取。(如果ID数量过多，则会执行很多次数据库查询)  
 2. 直接使用MySql where in语句。(只需要查询一次，而且需要保证查出来的数据的顺序与ID列表的顺序一样)  
 
-所以我就很纠结这两种实现的性能是什么样的，哪个最优?  
+下面是用实践操作来比较这两种方案的性能。  
 <!-- more -->
 实践出真理，环境如下(框架全是默认设置，无优化):  
 > Windows、MySql5.7、laravel-illuminate/database、  
@@ -112,9 +112,9 @@ CREATE TABLE `t_company` (
 所以建议大家有这种需求的时候应该使用性能更高的in语句，能节省大量时间。  
 
 
-*小插曲*
+> *小插曲*
 > MySQL如何以与whereIn子句相同的顺序排序结果？
-> 答：可以使用order by field。
+> 答：使用order by field。
 
 ```php
     $id_list = $db->offset(0)->limit(1000)->pluck('company_id')->toArray();
