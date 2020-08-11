@@ -84,7 +84,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="敏感词搜索-DFA算法实现(附Php和Node版)">
 <meta property="og:url" content="http://blog.hoping.me/2019/01/06/敏感词搜索-DFA算法实现-附Php和Node版/index.html">
-<meta property="og:site_name" content="ihoping">
+<meta property="og:site_name" content="所追寻的光啊">
 <meta property="og:description" content="背景最近项目需要做敏感词过滤的功能，调研后发现，有以下个方案可以选择：  直接将敏感词写进数组，利用查询数组的方法来查询。 传统的敏感词入库后SQL查询。 利用ES搜索引擎建立分词索引来查询。 利用DFA算法来进行。  首先，产品经理收集到的敏感词有三千多条，且未来还会增加，使用第一种方案肯定不行。其次，为了方便以后的扩展性尽量减少对数据库的依赖，以及对敏感词检测接口的性能考虑，放弃第二个方案。第">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="http://blog.hoping.me/images/201901/dfa.png">
@@ -128,7 +128,7 @@
 
 
 
-  <title>敏感词搜索-DFA算法实现(附Php和Node版) | ihoping</title>
+  <title>敏感词搜索-DFA算法实现(附Php和Node版) | 所追寻的光啊</title>
   
 
 
@@ -158,7 +158,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ihoping</span>
+        <span class="site-title">所追寻的光啊</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -199,6 +199,16 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
           </a>
         </li>
       
@@ -254,7 +264,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ihoping">
+      <meta itemprop="name" content="所追寻的光啊">
     </span>
 
     
@@ -458,7 +468,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -479,10 +489,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">4</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
-                
+                </a>
               </div>
             
 
@@ -533,7 +543,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

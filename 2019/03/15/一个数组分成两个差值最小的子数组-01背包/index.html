@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="看到这样一个题目:将一个数组分成两个子数组，使这两个数组的和的差值最小，并给出差值。    例子:[3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。  思路：差值最小意思就是两个数组的和最接近，那两个分出来的数组的和都接近的是哪个值？没错就是sum/2。假设用sum1表示第一部分的">
+<meta name="description" content="看到这样一个题目:将一个数组分成两个子数组，使这两个数组的和的差值最小，并给出差值。   举个例子:      [3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。  思路：差值最小意思就是两个数组的和最接近，那两个分出来的数组的和都接近的是哪个值？没错就是sum/2。假设用sum1">
 <meta name="keywords" content="动态规划">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一个数组分成两个差值最小的子数组(01背包)">
 <meta property="og:url" content="http://blog.hoping.me/2019/03/15/一个数组分成两个差值最小的子数组-01背包/index.html">
-<meta property="og:site_name" content="ihoping">
-<meta property="og:description" content="看到这样一个题目:将一个数组分成两个子数组，使这两个数组的和的差值最小，并给出差值。    例子:[3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。  思路：差值最小意思就是两个数组的和最接近，那两个分出来的数组的和都接近的是哪个值？没错就是sum/2。假设用sum1表示第一部分的">
+<meta property="og:site_name" content="所追寻的光啊">
+<meta property="og:description" content="看到这样一个题目:将一个数组分成两个子数组，使这两个数组的和的差值最小，并给出差值。   举个例子:      [3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。  思路：差值最小意思就是两个数组的和最接近，那两个分出来的数组的和都接近的是哪个值？没错就是sum/2。假设用sum1">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-11-01T01:50:27.907Z">
+<meta property="og:updated_time" content="2019-12-02T03:17:03.524Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个数组分成两个差值最小的子数组(01背包)">
-<meta name="twitter:description" content="看到这样一个题目:将一个数组分成两个子数组，使这两个数组的和的差值最小，并给出差值。    例子:[3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。  思路：差值最小意思就是两个数组的和最接近，那两个分出来的数组的和都接近的是哪个值？没错就是sum/2。假设用sum1表示第一部分的">
+<meta name="twitter:description" content="看到这样一个题目:将一个数组分成两个子数组，使这两个数组的和的差值最小，并给出差值。   举个例子:      [3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。  思路：差值最小意思就是两个数组的和最接近，那两个分出来的数组的和都接近的是哪个值？没错就是sum/2。假设用sum1">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>一个数组分成两个差值最小的子数组(01背包) | ihoping</title>
+  <title>一个数组分成两个差值最小的子数组(01背包) | 所追寻的光啊</title>
   
 
 
@@ -156,7 +156,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">ihoping</span>
+        <span class="site-title">所追寻的光啊</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -197,6 +197,16 @@
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            Tags
           </a>
         </li>
       
@@ -252,7 +262,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ihoping">
+      <meta itemprop="name" content="所追寻的光啊">
     </span>
 
     
@@ -333,8 +343,9 @@
 
       
         <p>看到这样一个题目:将一个数组分成两个子数组，使这两个数组的和的差值最小，并给出差值。  </p>
+<p>举个例子:    </p>
 <blockquote>
-<p><em>例子:</em><br>[3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。<br>[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。</p>
+<p>[3, 1, 5]应该分成[3, 1]和[5]，因为这时两个数组和的差值为1。<br>[5, 9, 7, 2]应该分为[5, 7]和[9, 2]，因为这时两个数组和的差值为1。</p>
 </blockquote>
 <p>思路：<br>差值最小意思就是两个数组的和最接近，那两个分出来的数组的和都接近的是哪个值？<br>没错就是<strong>sum/2</strong>。<br>假设用sum1表示第一部分的和，sum2表示第二部分的和，sum表示所有数的和，那么sum1+sum2=sum。<br>假设sum1&lt;sum2 那么sum/2-sum1 = sum2-sum/2;<br>换句话说该题可以理解为：从一个数组里取出一些元素，使这些元素的和 &lt;= sum/2。</p>
 <p><strong>其实这就是一个基础的01背包问题。<a href="https://zh.wikipedia.org/wiki/%E8%83%8C%E5%8C%85%E9%97%AE%E9%A2%98" target="_blank" rel="noopener">参考链接</a></strong><br>我们把背包的最大容量看成是sum/2。  </p>
@@ -382,8 +393,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/06/28/PHPManual阅读笔记/" rel="prev" title="PHPManual阅读笔记">
-                PHPManual阅读笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/06/28/PHPManual阅读笔记/" rel="prev" title="PHPManual">
+                PHPManual <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -452,7 +463,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -473,10 +484,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">4</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">tags</span>
-                
+                </a>
               </div>
             
 
@@ -511,7 +522,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
