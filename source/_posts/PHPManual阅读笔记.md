@@ -1,7 +1,7 @@
 ---
-title: PHPManual阅读笔记
+title: PHPManual
 date: 2019-06-28 14:43:22
-tags:
+tags: note
 ---
 
 1.	与其它用C或Perl语言写的脚本之间的区别—与用大量的命令来编写程序以输出 HTML 不同的是，PHP 页面就是 HTML，只不过在其中嵌入了一些代码来做一些事情。
