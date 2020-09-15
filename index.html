@@ -452,6 +452,22 @@
 <li>前端判断，在底层ajax请求框架中，如果发现请求接口失败(404)，则请求继续请求对应的mock接口(替换base_api)。</li>
 <li>后端判断，如果接受到的请求不存在handler，则反向代理到mock接口。</li>
 </ol>
+<h2 id="YApi要点"><a href="#YApi要点" class="headerlink" title="YApi要点"></a>YApi要点</h2><h3 id="数据MOCK"><a href="#数据MOCK" class="headerlink" title="数据MOCK"></a>数据MOCK</h3><ol>
+<li>普通Mock(mockjs、jsonschema)</li>
+<li>Mock期望</li>
+<li>自定义Mock脚本</li>
+<li>项目全局mock脚本</li>
+</ol>
+<p>优先级：Mock期望&gt;自定义Mock脚本&gt;项目全局mock脚本&gt;普通Mock</p>
+<h3 id="自动化测试"><a href="#自动化测试" class="headerlink" title="自动化测试"></a>自动化测试</h3><ol>
+<li>通过跨域插件测试</li>
+<li>通过接口获取token测试</li>
+<li>手动设置相关session值测试</li>
+<li>请求数据mock(接口返回、mock数据)</li>
+<li>自定义规则测试</li>
+<li>全局规则测试</li>
+<li>高级请求配置(改请求参数、存cookie数据、改响应数据等高级操作)</li>
+</ol>
 
           
         
