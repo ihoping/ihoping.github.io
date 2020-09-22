@@ -323,34 +323,34 @@
             <h2 id="分区方案"><a href="#分区方案" class="headerlink" title="分区方案"></a>分区方案</h2><table>
 <thead>
 <tr>
+<th>分区类型</th>
+<th>分区格式</th>
 <th>挂载点</th>
-<th style="text-align:right">分区类型</th>
-<th style="text-align:center">分区格式</th>
-<th style="text-align:center">分区大小</th>
-<th style="text-align:center">备注</th>
+<th>分区大小</th>
+<th>备注</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>主分区</td>
+<td>ext4</td>
 <td>/</td>
-<td style="text-align:right">主分区</td>
-<td style="text-align:center">ext4</td>
-<td style="text-align:center">30G</td>
-<td style="text-align:center">用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，以后可能需要更大容量</td>
+<td>30G</td>
+<td>用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，或者要安装大量软件，则需要更大容量</td>
 </tr>
 <tr>
+<td>逻辑分区</td>
+<td>ext4</td>
 <td>/home</td>
-<td style="text-align:right">逻辑分区</td>
-<td style="text-align:center">ext4</td>
-<td style="text-align:center">除去30G后的磁盘可用空间</td>
-<td style="text-align:center">用来存储用户数据，单独的home分区也可以保护个人文件安全，防止系统崩溃时丢失文件。</td>
+<td>除去30G后的磁盘可用空间</td>
+<td>用来存储用户数据，单独的home分区也可以保护个人文件安全，防止系统崩溃时丢失文件。</td>
 </tr>
 <tr>
+<td>逻辑分区</td>
+<td>efi</td>
 <td></td>
-<td style="text-align:right">逻辑分区</td>
-<td style="text-align:center">efi</td>
-<td style="text-align:center">200M</td>
-<td style="text-align:center">如果需要使用uefi+gpt引导系统则要新建一个efi分区，如果使用传统bios+mbr启动系统则没必要，如果是装双系统的话，windows已经建了一个efi分区就没必要新建了</td>
+<td>200M</td>
+<td>如果需要使用uefi+gpt引导系统则需新建efi分区，如果使用传统bios+mbr启动系统则没必要，如果是装双系统的话，windows8+版本已经建了efi分区也没必要新建</td>
 </tr>
 </tbody>
 </table>
