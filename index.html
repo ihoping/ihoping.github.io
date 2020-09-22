@@ -320,7 +320,8 @@
       
         
           
-            <h2 id="分区方案"><a href="#分区方案" class="headerlink" title="分区方案"></a>分区方案</h2><table>
+            <p><strong>安装之前需进入bios关闭Secure Boot，不然安装完成之后无法引导系统。</strong></p>
+<h2 id="分区方案"><a href="#分区方案" class="headerlink" title="分区方案"></a>分区方案</h2><table>
 <thead>
 <tr>
 <th>分区类型</th>
@@ -347,7 +348,7 @@
 </tr>
 <tr>
 <td>逻辑分区</td>
-<td>efi</td>
+<td>efi(fat32)</td>
 <td></td>
 <td>200M</td>
 <td>如果需要使用uefi+gpt引导系统则需新建efi分区，如果使用传统bios+mbr启动系统则没必要，如果是装双系统的话，windows8+版本已经建了efi分区也没必要新建</td>

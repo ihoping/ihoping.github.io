@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="分区方案   分区类型 分区格式 挂载点 分区大小 备注     主分区 ext4 / 30G 用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，或者要安装大量软件，则需要更大容量   逻辑分区 ext4 /home 除去30G后的磁盘可用空间 用来存储用户数据，单独的home分区也可以保护个人文件安全，防止系统崩溃时丢失文件。   逻辑分区 efi  200M 如果需要使用uef">
+<meta name="description" content="安装之前需进入bios关闭Secure Boot，不然安装完成之后无法引导系统。 分区方案   分区类型 分区格式 挂载点 分区大小 备注     主分区 ext4 / 30G 用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，或者要安装大量软件，则需要更大容量   逻辑分区 ext4 /home 除去30G后的磁盘可用空间 用来存储用户数据，单独的home分区也可以保护个人文件安">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubuntu分区方案">
 <meta property="og:url" content="http://blog.hoping.me/2020/09/22/ubuntu简单分区方案/index.html">
 <meta property="og:site_name" content="所追寻的光啊">
-<meta property="og:description" content="分区方案   分区类型 分区格式 挂载点 分区大小 备注     主分区 ext4 / 30G 用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，或者要安装大量软件，则需要更大容量   逻辑分区 ext4 /home 除去30G后的磁盘可用空间 用来存储用户数据，单独的home分区也可以保护个人文件安全，防止系统崩溃时丢失文件。   逻辑分区 efi  200M 如果需要使用uef">
+<meta property="og:description" content="安装之前需进入bios关闭Secure Boot，不然安装完成之后无法引导系统。 分区方案   分区类型 分区格式 挂载点 分区大小 备注     主分区 ext4 / 30G 用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，或者要安装大量软件，则需要更大容量   逻辑分区 ext4 /home 除去30G后的磁盘可用空间 用来存储用户数据，单独的home分区也可以保护个人文件安">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-09-22T06:55:41.419Z">
+<meta property="og:updated_time" content="2020-09-22T07:06:22.988Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu分区方案">
-<meta name="twitter:description" content="分区方案   分区类型 分区格式 挂载点 分区大小 备注     主分区 ext4 / 30G 用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，或者要安装大量软件，则需要更大容量   逻辑分区 ext4 /home 除去30G后的磁盘可用空间 用来存储用户数据，单独的home分区也可以保护个人文件安全，防止系统崩溃时丢失文件。   逻辑分区 efi  200M 如果需要使用uef">
+<meta name="twitter:description" content="安装之前需进入bios关闭Secure Boot，不然安装完成之后无法引导系统。 分区方案   分区类型 分区格式 挂载点 分区大小 备注     主分区 ext4 / 30G 用来安装系统和软件，30G即可，当然随着Ubuntu系统不断发展，或者要安装大量软件，则需要更大容量   逻辑分区 ext4 /home 除去30G后的磁盘可用空间 用来存储用户数据，单独的home分区也可以保护个人文件安">
 
 
 
@@ -319,7 +319,8 @@
       
 
       
-        <h2 id="分区方案"><a href="#分区方案" class="headerlink" title="分区方案"></a>分区方案</h2><table>
+        <p><strong>安装之前需进入bios关闭Secure Boot，不然安装完成之后无法引导系统。</strong></p>
+<h2 id="分区方案"><a href="#分区方案" class="headerlink" title="分区方案"></a>分区方案</h2><table>
 <thead>
 <tr>
 <th>分区类型</th>
@@ -346,7 +347,7 @@
 </tr>
 <tr>
 <td>逻辑分区</td>
-<td>efi</td>
+<td>efi(fat32)</td>
 <td></td>
 <td>200M</td>
 <td>如果需要使用uefi+gpt引导系统则需新建efi分区，如果使用传统bios+mbr启动系统则没必要，如果是装双系统的话，windows8+版本已经建了efi分区也没必要新建</td>
